@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/res/css/fonts.css">
+    <link rel="stylesheet" href="/res/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="section_top">1</div>
+            <div class="section_bottom" id="first_note">
+                <div>
+                    <p>Dein <strong>NotenApp</strong>-Account hat nicht die <strong>aktuellste Version!</strong></p>
+                    <p>Mit diesem Tool kannst du deinen Account ohne viel stress zu einem neuen <strong>umwandeln</strong>.</p>
+                    <p><strong>1 Schritt</strong> noch und du kannst direkt weiter Schulaufgaben machen.</p>
+                </div>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="section_top">2</div>
+            <div class="section_bottom">
+                <form action="./update.php" method="POST">
+                    <input type="text" name="username" id="username" placeholder="Benutzername">
+                    <input type="password" name="password" id="password" placeholder="Passwort">
+                    <input type="submit" value="Account updaten">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
