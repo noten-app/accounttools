@@ -47,7 +47,7 @@ if ($stmt = $con->prepare("SELECT id, displayname, salt, password, account_versi
     $salt = "";
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
     if($stmt = $con->prepare("UPDATE accounts SET account_version = ?, salt = ?, password = ? WHERE id = ?")) {
-        $stmt->bind_param('issi', $account_version, $salt, $hashed_password, $id);
+        $stmt->bind_param('isss', $account_version, $salt, $hashed_password, $id);
         $stmt->execute();
         exit("success");
     }
