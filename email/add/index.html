@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add E-Mail-Adress | Noten-App </title>
+    <link rel="stylesheet" href="/res/css/fonts.css">
+    <link rel="stylesheet" href="/res/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/res/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon-16x16.png">
+    <link rel="mask-icon" href="/res/img/safari-pinned-tab.svg" color="#eb660e">
+    <link rel="shortcut icon" href="/res/img/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Noten-App">
+    <meta name="application-name" content="Noten-App">
+    <meta name="msapplication-TileColor" content="#282c36">
+    <meta name="msapplication-TileImage" content="/res/img/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="section_top">1</div>
+            <div class="section_bottom" id="first_note">
+                <div>
+                    <p>Dein <strong>NotenApp</strong>-Account hat aktuell <strong>keine E-Mail-Adresse!</strong></p>
+                    <p>Hier kannst du ganz einfach eine Hinzufügen.</p>
+                    <p>Zuerst musst du dich <strong>anmelden</strong>!</p>
+                    <p>Dann kannst du deine <strong>E-Mail-Adresse hinzufügen</strong>.</p>
+                </div>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="section_top">2</div>
+            <div class="section_bottom">
+                <div class="form" id="userForm">
+                    <input type="text" name="username" id="username" placeholder="Benutzername" required>
+                    <input type="password" name="password" id="password" placeholder="Passwort" required>
+                    <input type="submit" value="Login" onclick="login();">
+                </div>
+                <div class="form" id="eMailForm">
+                    <input type="email" name="email" id="email" placeholder="E-Mail">
+                    <input type="submit" value="Add E-Mail-Adress" onclick="addEmail();">
+                </div>
+                <div id="alreadySet">
+                    <p>The E-Mail is <strong>already set.</strong></p>
+                    <p>Please <a href="../edit/"><strong>click here</strong> to <strong>edit</strong> your E-Mail</a>.</p>
+                </div>
+                <div id="wrongPass">
+                    <p>The Password is <strong>wrong</strong> or the <strong>Account doesn't exist</strong>.</p>
+                    <p>If you <strong>forgot your Password</strong> and have no E-Mail in your Account, please <strong>open a Support Ticket</strong>!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/res/js/jquery/jquery-3.6.1.min.js"></script>
+    <script src="/res/js/scroll-steps.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
