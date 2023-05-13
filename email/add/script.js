@@ -35,7 +35,7 @@ function addEmail() {
         success: function(data) {
             console.log(data);
             if (data == 'success') {
-                location.assign("https://www.google.com/settings/security/lesssecureapps");
+                location.assign("https://app.noten-app.de/");
             } else {
                 console.log(data);
             }
